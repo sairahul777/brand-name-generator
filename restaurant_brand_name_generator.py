@@ -36,11 +36,9 @@ suffixes = [
 
 
 def to_camel_case_with_space(prefix, suffix):
-    """Convert restaurant name to Capitalized Words with space."""
     return f"{prefix.capitalize()} {suffix.capitalize()}"
 
 def generate_brand_name(prefix=None):
-    """Generates a restaurant brand name with optional custom prefix."""
     if prefix:
         random_suffix = random.choice(suffixes)
         while random_suffix.lower() == prefix.lower():
@@ -98,3 +96,4 @@ while True:
 
     else:
         print("❌ Invalid input. Please type 'y', 'n', or 'stop'.\n")
+
